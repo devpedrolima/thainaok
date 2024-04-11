@@ -145,8 +145,6 @@ h1 {
 footer {
   background-color: black;
   color: white;
-  height: auto;
-  width: auto;
 }
 
 .footer-bg {
@@ -161,7 +159,7 @@ footer {
 }
 
 @media (max-width: 768px) {
-.footer-left p {
+  .footer-left p {
     font-size: 14px; /* Defina o tamanho do texto desejado */
   }
 }
@@ -181,12 +179,8 @@ i {
   font-weight: 900;
 }
 
-@media (max-width: 6700px) {
+@media (max-width: 670px) {
   .image-container {
-     margin-bottom: 50px; /* Ajuste conforme necessário */
-   }
- 
-   footer {
-     position: static; /* Altera para a posição padrão */
-   }
- }
+    margin-bottom: 50px; /* Ajuste conforme necessário */
+  }
+}
