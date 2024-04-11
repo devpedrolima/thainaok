@@ -2,18 +2,6 @@
 * {
   font-family: Arial, Helvetica, sans-serif;
 }
-/* CSS para tornar a imagem de fundo responsiva */
-body {
-    background-image: url(../img/background.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed; /* Para manter a imagem de fundo fixa */
-    margin: 0;
-    padding: 0;
-    position: relative;
-    min-height: 100vh;
-}
 
 /* Body */
 body {
@@ -34,12 +22,12 @@ body::before {
   left: 0;
   width: 100%;
   height: 100vh;
-  background: #69239E ;
+  background: #69239E;
   opacity: 0.5;
   z-index: -1;
   margin: 0;
   padding: 0;
-  }
+}
 
 /* Navbar */
 header {
@@ -126,28 +114,28 @@ button:hover {
 }
 
 .button-container {
-display: flex;
-justify-content: center;
-margin: 20px;
-margin-bottom: 200px;
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  margin-bottom: 200px;
 }
 
 .button-container button {
-border: none;
-outline: 0;
-padding: 0px;
-color: white;
-background-color: #000;
-text-align: center;
-cursor: pointer;
-font-size: 20px;
-width: 200px;
-height: 60px;
-margin: 0 5px;
+  border: none;
+  outline: 0;
+  padding: 0px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  font-size: 20px;
+  width: 200px;
+  height: 60px;
+  margin: 0 5px;
 }
 
 .button-container button:hover {
-opacity: 0.7;
+  opacity: 0.7;
 }
 
 /* Estilo para o h1 "Choose an option" */
@@ -173,9 +161,9 @@ footer {
 }
 
 @media (max-width: 768px) {
-.footer-left p {
-  font-size: 14px; /* Defina o tamanho do texto desejado */
-}
+  .footer-left p {
+    font-size: 14px; /* Defina o tamanho do texto desejado */
+  }
 }
 
 .social-media-icons {
@@ -211,13 +199,10 @@ i {
 
 @media (max-width: 600px) {
   .image-container {
-     margin-bottom: 50px; /* Adjust this value as needed */
-   }
- 
-   footer {
-     position: fixed;
-     bottom: 0;
-     left: 0;
-     width: 100%;
-   }
- }
+    margin-bottom: 50px; /* Ajuste conforme necessário */
+  }
+
+  footer {
+    position: static; /* Altera para a posição padrão */
+  }
+}
