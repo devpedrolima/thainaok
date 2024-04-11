@@ -196,12 +196,12 @@ i {
   font-weight: 900;
 }
 
-@media (max-width: 600px) {
-.image-container {
-    margin-bottom: 50px; /* Ajuste conforme necessário */
-  }
-
-  footer {
-    position: static; /* Altera para a posição padrão */
-  }
-}
+@media (max-width: 6700px) {
+  .image-container {
+     margin-bottom: 50px; /* Ajuste conforme necessário */
+   }
+ 
+   footer {
+     position: static; /* Altera para a posição padrão */
+   }
+ }
