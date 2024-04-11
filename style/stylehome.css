@@ -209,8 +209,15 @@ i {
   font-weight: 900;
 }
 
-@media (max-width: 768px) {
-.footer-left p {
-  font-size: 14px; /* Defina o tamanho do texto desejado */
-}
-}
+@media (max-width: 600px) {
+  .image-container {
+     margin-bottom: 50px; /* Adjust this value as needed */
+   }
+ 
+   footer {
+     position: fixed;
+     bottom: 0;
+     left: 0;
+     width: 100%;
+   }
+ }
