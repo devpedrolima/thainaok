@@ -3,7 +3,7 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.main-container {
+.main-container{
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -32,16 +32,16 @@ nav {
 }
 
 .logo img {
-  max-width: 100%;
-  height: auto;
+  max-width: 100%; /* Garante que a imagem da navbar não ultrapasse seu contêiner */
+  height: auto; /* Mantém a proporção da imagem */
 }
 
 ul {
   list-style: none;
   display: flex;
   align-items: center;
-  margin: 0;
-  padding: 0;
+  margin: 0; /* Remover margens padrão */
+  padding: 0; /* Remover preenchimento padrão */
 }
 
 li {
@@ -100,24 +100,24 @@ button:hover {
   text-align: center;
 }
 
-.text {
+.text{
   text-align: center;
-  margin-top: 20px;
+  margin-top:20px;
 }
 
 .container img {
-  width: 100%;
-  height: auto;
+  width: 100%; /* Garante que as imagens no conteúdo ocupem 100% da largura do contêiner */
+  height: auto; /* Mantém a proporção da imagem */
 }
 
 .container h1 {
-  margin-top: 10px;
+  margin-top: 10px ;
   font-size: 30px;
   text-align: center;
 }
 
 .container p {
-  margin-top: 5px;
+  margin-top: 5px ;
   margin-bottom: 10px;
   font-size: 20px;
   text-align: center;
@@ -125,7 +125,7 @@ button:hover {
 }
 
 button {
-  border: none;
+  border:none;
   outline: 0;
   padding: 12px;
   color: white;
@@ -140,25 +140,44 @@ button:hover {
   opacity: 0.7;
 }
 
-@media (max-width: 600px) {
-  .main-container {
-    flex-direction: column;
-    margin: 50px; /* Ajuste conforme desejado */
+/* Media Query for 750px */
+@media (max-width: 750px) {
+  .properties-grid {
+      display: flex;
+      flex-direction: column;
   }
 
+  .properties-grid.row {
+      flex-direction: column;
+  }
+
+  .properties-grid.col {
+      width: 100%;
+  }
+
+  .properties-grid.col + .col {
+      margin-top: 20px;
+  }
+}
+
+/* Media Query for 600px */
+@media (max-width: 600px) {
   .container {
-    margin: 0; /* Removido o margin para que os contêineres ocupem a largura total */
+      display: flex;
+      flex-direction: column;
+      margin: 0; /* Remove the margin for the containers to occupy the full width */
   }
 
   .row {
-    flex-direction: column; /* Empilhando as linhas verticalmente */
-    margin: 0; /* Removido o margin para que os contêineres ocupem a largura total */
+      display: flex;
+      flex-direction: column;
+      margin: 0; /* Remove the margin for the containers to occupy the full width */
   }
 
   .col {
-    flex-basis: 100%; /* Define a largura das colunas para ocupar 100% da largura */
-    max-width: 100%; /* Define a largura máxima para ocupar 100% da largura */
-    margin-bottom: 20px; /* Adiciona margem inferior entre os contêineres */
+      flex-basis: 100%; /* Set the width of the columns to occupy 100% of the width */
+      max-width: 100%; /* Set the maximum width for the columns to occupy 100% of the width */
+      margin-bottom: 20px; /* Add bottom margin between the containers */
   }
 }
 
