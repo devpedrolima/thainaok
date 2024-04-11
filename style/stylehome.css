@@ -145,7 +145,8 @@ h1 {
 footer {
   background-color: black;
   color: white;
-  padding: 0px;
+  height: auto;
+  width: auto;
 }
 
 .footer-bg {
