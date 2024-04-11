@@ -156,29 +156,13 @@ footer {
 .footer-left,
 .footer-right {
   flex: 1;
-  padding: 20px;
+  padding: 0px;
 }
 
 @media (max-width: 768px) {
 .footer-left p {
     font-size: 14px; /* Defina o tamanho do texto desejado */
   }
-}
-
-.social-media-icons {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-}
-
-.social-media-icons a {
-  color: white;
-  text-decoration: none;
-  margin-right: 10px;
-}
-
-.social-media-icons a:last-child {
-  margin-right: 0;
 }
 
 .footer-copyright {
