@@ -2,84 +2,35 @@
 <html>
 <head>
   <title>First Rent - Home</title>
-  <link rel="stylesheet" href="../style/stylehome.css" />
+  <link rel="stylesheet" href="./style/stylehome.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha384-k3kNa0h8HBxjX6FtGyYV6Tg7o9W2W+oW2L8u6kX3gY" crossorigin="anonymous" />
-  <style>
-    /* CSS para tornar a imagem de fundo responsiva */
-    body {
-      background-image: url(../img/background.jpg);
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-      background-attachment: fixed; /* Para manter a imagem de fundo fixa */
-      margin: 0;
-      padding: 0;
-      position: relative;
-      min-height: 100vh;
-    }
-
-    /* CSS para esconder os links do menu e exibir o ícone hamburger em telas menores */
-    @media (max-width: 748px) {
-      nav ul {
-        display: none;
-      }
-
-      .hamburger {
-        display: block;
-      }
-
-      .show-mobile {
-        display: block;
-      }
-
-      .hide-mobile {
-        display: none;
-      }
-
-      h1 {
-        font-size: 24px; /* Ajuste o tamanho do texto "Choose an option" */
-      }
-
-      footer {
-        position: fixed;
-        bottom: 0;
-        width: 100%;
-      }
-    }
-  </style>
 </head>
 <body>
   <header>
     <nav>
       <div class="logo">
-        <a href="../index/home.html">
-          <img src="../img/rent.png" alt="Logo" width="300" height="70" />
-        </a>
+        <a href="./index/home.html"
+          ><img src="./img/rent.png" alt="Logo" width="300" height="70"
+        /></a>
       </div>
-      <ul class="hide-mobile">
-        <li><a href="../index/home.html">Home</a></li>
-        <li><a href="../index/buy.html">Buy</a></li>
-        <li><a href="../index/rent.html">Rent</a></li>
+      <ul>
+        <li><a href="./index/home.html">Home</a></li>
+        <li><a href="./index/buy.html">Buy</a></li>
+        <li><a href="./index/rent.html">Rent</a></li>
         <li class="contact-us">
-          <a href="../index/contact.html">
-            <button>Contact us</button>
-          </a>
+          <a href="./index/contact.html"><button>Contact us</button></a>
         </li>
       </ul>
-      <!-- Ícone hamburger -->
-      <button class="hamburger show-mobile" id="hamburger">
-        <i class="fas fa-bars"></i>
-      </button>
     </nav>
   </header>
 
   <div class="image-container">
-    <img src="../img/logo.png" alt="Image" />
+    <img src="./img/logo.png" alt="Image" />
     <h1>Choose an option</h1>
   </div>
   <div class="button-container">
-    <a href="../index/rent.html"><button>Rent</button></a>
-    <a href="../index/buy.html"><button>Buy</button></a>
+    <a href="./index/rent.html"><button>Rent</button></a>
+    <a href="./index/buy.html"><button>Buy</button></a>
   </div>
 
   <footer>
