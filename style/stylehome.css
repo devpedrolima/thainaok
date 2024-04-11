@@ -9,7 +9,7 @@ body {
     padding: 0;
     background-image: url(../img/background.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size:auto;
     background-position: center;
     position: relative;
     min-height: 100vh; /* Para garantir que o conteúdo ocupe toda a altura da tela */
