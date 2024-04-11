@@ -1,229 +1,229 @@
 /* Reset */
 * {
-  font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .main-container{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 100px 100px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px 100px 100px;
 }
 
 /* Navbar */
 header {
-  background-color: #b493cf;
-  padding:30px;
-  display: 90px;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
-  width: 97.2%;
-  opacity: 0.9;
-  margin-top: -20px;
-  margin-left: -10px;
+    background-color: #b493cf;
+    padding:30px;
+    display: 90px;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 97.2%;
+    opacity: 0.9;
+    margin-top: -20px;
+    margin-left: -10px;
 }
 
 nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
 }
 
 .logo img {
-  max-width: 100%; /* Garante que a imagem da navbar não ultrapasse seu contêiner */
-  height: auto; /* Mantém a proporção da imagem */
+    max-width: 100%; /* Garante que a imagem da navbar não ultrapasse seu contêiner */
+    height: auto; /* Mantém a proporção da imagem */
 }
 
 ul {
-  list-style: none;
-  display: flex;
-  align-items: center;
-  margin: 0; /* Remover margens padrão */
-  padding: 0; /* Remover preenchimento padrão */
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0; /* Remover margens padrão */
+    padding: 0; /* Remover preenchimento padrão */
 }
 
 li {
-  margin-right: 20px;
+    margin-right: 20px;
 }
 
 li:last-child {
-  margin-right: 0;
+    margin-right: 0;
 }
 
 a {
-  text-decoration: none;
-  color: #000000;
-  font-size: 20px;
+    text-decoration: none;
+    color: #000000;
+    font-size: 20px;
 }
 
 .contact-us {
-  margin-left: 20px;
+    margin-left: 20px;
 }
 
 button {
-  border: none;
-  outline: 0;
-  padding: 12px;
-  color: white;
-  background-color: #000;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
-  font-size: 18px;
-  border-radius: 10px;
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    border-radius: 10px;
 }
 
 button:hover {
-  opacity: 0.7;
+    opacity: 0.7;
 }
 
 .container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  margin: 20px;
-  margin-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px;
+    margin-bottom: 40px;
 }
 
 .row {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px;
 }
 
 .col {
-  flex-basis: 45%;
-  max-width: 45%;
-  text-align: center;
+    flex-basis: 45%;
+    max-width: 45%;
+    text-align: center;
 }
 
 .text{
-  text-align: center;
-  margin-top:20px;
+    text-align: center;
+    margin-top:20px;
 }
 
 .container img {
-  width: 100%; /* Garante que as imagens no conteúdo ocupem 100% da largura do contêiner */
-  height: auto; /* Mantém a proporção da imagem */
+    width: 100%; /* Garante que as imagens no conteúdo ocupem 100% da largura do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
 }
 
 .container h1 {
-  margin-top: 10px ;
-  font-size: 30px;
-  text-align: center;
+    margin-top: 10px ;
+    font-size: 30px;
+    text-align: center;
 }
 
 .container p {
-  margin-top: 5px ;
-  margin-bottom: 10px;
-  font-size: 20px;
-  text-align: center;
-  font-weight: 500;
+    margin-top: 5px ;
+    margin-bottom: 10px;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 500;
 }
 
 button {
-  border:none;
-  outline: 0;
-  padding: 12px;
-  color: white;
-  background-color: #000;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
-  font-size: 18px;
+    border:none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
 }
 
 button:hover {
-  opacity: 0.7;
+    opacity: 0.7;
 }
 
 /* Media Query for 750px */
 @media (max-width: 750px) {
-  .properties-grid {
-      display: flex;
-      flex-direction: column;
-  }
+    .properties-grid {
+        display: flex;
+        flex-direction: column;
+    }
 
-  .properties-grid.row {
-      flex-direction: column;
-  }
+    .properties-grid.row {
+        flex-direction: column;
+    }
 
-  .properties-grid.col {
-      width: 100%;
-  }
+    .properties-grid.col {
+        width: 100%;
+    }
 
-  .properties-grid.col + .col {
-      margin-top: 20px;
-  }
+    .properties-grid.col + .col {
+        margin-top: 20px;
+    }
 }
 
 /* Media Query for 600px */
 @media (max-width: 600px) {
-  .container {
-      display: flex;
-      flex-direction: column;
-      margin: 0; /* Remove the margin for the containers to occupy the full width */
-  }
+    .container {
+        display: flex;
+        flex-direction: column;
+        margin: 0; /* Remove the margin for the containers to occupy the full width */
+    }
 
-  .row {
-      display: flex;
-      flex-direction: column;
-      margin: 0; /* Remove the margin for the containers to occupy the full width */
-  }
+    .row {
+        display: flex;
+        flex-direction: column;
+        margin: 0; /* Remove the margin for the containers to occupy the full width */
+    }
 
-  .col {
-      flex-basis: 100%; /* Set the width of the columns to occupy 100% of the width */
-      max-width: 100%; /* Set the maximum width for the columns to occupy 100% of the width */
-      margin-bottom: 20px; /* Add bottom margin between the containers */
-  }
+    .col {
+        flex-basis: 100%; /* Set the width of the columns to occupy 100% of the width */
+        max-width: 100%; /* Set the maximum width for the columns to occupy 100% of the width */
+        margin-bottom: 20px; /* Add bottom margin between the containers */
+    }
 }
 
 footer {
-  background-color: black;
-  color: white;
-  padding: 0px;
+    background-color: black;
+    color: white;
+    padding: 0px;
 }
-
+  
 .footer-bg {
-  display: flex;
-  justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
 }
-
+  
 .footer-left,
 .footer-right {
-  flex: 1;
-  padding: 20px;
+    flex: 1;
+    padding: 20px;
 }
-
+  
 .footer-left h1 {
-  margin-top: 0;
+    margin-top: 0;
 }
-
+  
 .social-media-icons {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
 }
-
+  
 .social-media-icons a {
-  color: white;
-  text-decoration: none;
-  margin-right: 10px;
+    color: white;
+    text-decoration: none;
+    margin-right: 10px;
 }
-
+  
 .social-media-icons a:last-child {
-  margin-right: 0;
+    margin-right: 0;
 }
-
+  
 .footer-copyright {
-  text-align: left;
-  width: 100%;
-  margin-top: 20px;
+    text-align: left;
+    width: 100%;
+    margin-top: 20px;
 }
-
+  
 .footer-copyright p {
-  margin: 0px;
+    margin: 0px;
 }
