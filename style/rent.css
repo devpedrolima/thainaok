@@ -85,6 +85,7 @@ button:hover {
     justify-content: space-around;
     margin: 20px;
     margin-bottom: 40px;
+    
 }
 
 .row {
@@ -184,46 +185,65 @@ button:hover {
 footer {
     background-color: black;
     color: white;
-    padding: 0px;
-}
-  
-.footer-bg {
-    display: flex;
-    justify-content: space-between;
-}
-  
-.footer-left,
-.footer-right {
-    flex: 1;
     padding: 20px;
-}
+    margin-right: -30px;
+    margin-left: -20px;
+  }
   
-.footer-left h1 {
-    margin-top: 0;
-}
-  
-.social-media-icons {
+  .footer-bg {
     display: flex;
     justify-content: space-between;
-    width: 100%;
-}
+  }
   
-.social-media-icons a {
-    color: white;
-    text-decoration: none;
-    margin-right: 10px;
-}
+  .footer-left,
+  .footer-right {
+    flex: 1;
+    margin-top: 40px;
+      padding: 40px;
+      margin-left: 20px;
+  }
   
-.social-media-icons a:last-child {
-    margin-right: 0;
-}
+  .footer-right h2 {
+    font-size: 16px; /* ajuste o tamanho da fonte conforme necessário para dispositivos móveis */
+    margin-top: 10px; /* adicione um espaço superior para separá-lo do parágrafo anterior */
+  }
   
-.footer-copyright {
-    text-align: left;
+  
+  @media (max-width: 768px) {
+    .footer-left p {
+      font-size: 14px; /* Defina o tamanho do texto desejado */
+    }
+  }
+  .footer-copyright {
+    text-align: center;
     width: 100%;
     margin-top: 20px;
-}
+  }
   
-.footer-copyright p {
+  .footer-copyright p {
     margin: 0px;
-}
+  }
+  i {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+  }
+  
+  @media (max-width: 768px) {
+    .footer-bg {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer-left,
+    .footer-right {
+      flex: none;
+      width: 100%;
+      padding: 20px; /* ajuste conforme necessário */
+      text-align: center; /* centralize o conteúdo */
+    }
+  
+    .social-media-icons {
+      flex-direction: row;
+      margin-top: 20px; /* adicione um espaço entre os ícones e o texto */
+    }
+  }
