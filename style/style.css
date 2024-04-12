@@ -99,6 +99,8 @@ button:hover {
   width: 100%;
   margin: 0 auto;
   position: relative;
+  margin-top: 200px;
+  margin-bottom: 400px;
 }
 
 #contact input[type="text"],
