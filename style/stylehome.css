@@ -1,23 +1,42 @@
 /* Reset */
 * {
   font-family: Arial, Helvetica, sans-serif;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
 }
+
 
 body {
-  background: #69239E ;
-
+  margin: 0;
+  padding: 0;
+  background-image: url(../img/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  min-height: 100vh; 
 }
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.main-container{
+}
+
 
 /* Navbar */
 header {
   background-color: #fff;
   padding: 20px;
-  display: flex;
+  display: 100px;
   justify-content: space-between;
   align-items: center;
+  position: relative;
   width: 97.2%;
   opacity: 0.9;
 }
@@ -76,28 +95,6 @@ button:hover {
   opacity: 0.7;
 }
 
-.main-container {
-  position: relative;
-  min-height: 100vh; /* Para garantir que o conteúdo ocupe toda a altura da tela */
-  background-image: url(../img/background.jpg);
-  opacity: 0.9;/* Cor de fundo do corpo */
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover; /* Ajusta o tamanho da imagem para cobrir todo o contêiner */
-}
-
-.main-container::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: #69239E;
-  opacity: 0.5;
-  z-index: -1;
-}
-
 .image-container {
   display: flex;
   flex-direction: column;
@@ -106,36 +103,37 @@ button:hover {
 }
 
 .image-container img {
-  margin-top: 20px;
+  margin-top: 300px;
   width: 325px;
-  height: auto; /* Mantém a proporção original da imagem */
+  height: 400px;
 }
 
 .image-container p {
-  margin-top: 10px;
+  margin-top: 20px;
   font-size: 20px;
-  color: #ffffff; /* Cor do texto */
 }
 
 .button-container {
-  display: flex;
-  justify-content: center;
-  margin: 20px;
+display: flex;
+justify-content: center;
+margin: 20px;
+margin-bottom: 300px;
 }
 
 .button-container button {
-  border: none;
-  outline: 0;
-  padding: 12px;
-  color: white;
-  background-color: #000;
-  text-align: center;
-  cursor: pointer;
-  font-size: 20px;
-  width: 200px;
-  height: 60px;
-  margin: 0 5px;
+border: none;
+outline: 0;
+padding: 0px;
+color: white;
+background-color: #000;
+text-align: center;
+cursor: pointer;
+font-size: 20px;
+width: 200px;
+height: 60px;
+margin: 0 5px;
 }
+
 
 .button-container button:hover {
   opacity: 0.7;
@@ -161,29 +159,15 @@ footer {
 .footer-left,
 .footer-right {
   flex: 1;
-  padding: 100px;
+    padding: 40px;
 }
 
-.footer-left h1 {
-  margin-top: 0;
-}
 
-.social-media-icons {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
+@media (max-width: 768px) {
+  .footer-left p {
+    font-size: 14px; /* Defina o tamanho do texto desejado */
+  }
 }
-
-.social-media-icons a {
-  color: white;
-  text-decoration: none;
-  margin-right: 10px;
-}
-
-.social-media-icons a:last-child {
-  margin-right: 0;
-}
-
 .footer-copyright {
   text-align: center;
   width: 100%;
@@ -197,32 +181,23 @@ i {
   font-family: "Font Awesome 6 Free";
   font-weight: 900;
 }
-@media (max-width: 650px) {
-  .image-container {
-    width: 100%;
-    margin-bottom: 50px;
-  }
 
-  .image-container img {
-    width: 100%;
-    max-width: 100%;
-  }
-
-  .button-container {
-    width: 100%;
-    display: flex;
+@media (max-width: 768px) {
+  .footer-bg {
     flex-direction: column;
     align-items: center;
   }
 
-  .button-container button {
+  .footer-left,
+  .footer-right {
+    flex: none;
     width: 100%;
-    margin-bottom: 10px;
+    padding: 20px; /* ajuste conforme necessário */
+    text-align: center; /* centralize o conteúdo */
   }
-}
 
-@media (max-width: 650px) {
-  footer {
-    font-size: 9px;
+  .social-media-icons {
+    flex-direction: row;
+    margin-top: 20px; /* adicione um espaço entre os ícones e o texto */
   }
 }
