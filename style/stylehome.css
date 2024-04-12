@@ -39,6 +39,7 @@ header {
   position: relative;
   width: 97.2%;
   opacity: 0.9;
+ 
 }
 
 nav {
@@ -103,7 +104,7 @@ button:hover {
 }
 
 .image-container img {
-  margin-top: 300px;
+  margin-top: 150px;
   width: 325px;
   height: 400px;
 }
@@ -163,6 +164,11 @@ footer {
   margin-top: 40px;
     padding: 40px;
     margin-left: 20px;
+}
+
+.footer-right h2 {
+  font-size: 16px; /* ajuste o tamanho da fonte conforme necessário para dispositivos móveis */
+  margin-top: 10px; /* adicione um espaço superior para separá-lo do parágrafo anterior */
 }
 
 
